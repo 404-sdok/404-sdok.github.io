@@ -1,0 +1,47 @@
+---
+layout: post
+title: "WEB1: 19년 7월 8일 동아리 활동 보고서"
+date: 2019-07-08 00:00:00 +0300
+description: 19년 7월 8일 동아리 활동 보고서 # Add post description (optional)
+img: # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [report, web]
+---
+
+7월 8일, 404 컴퓨터 못 찾음은 17시부터 18시까지 진행된 동아리 활동을 통해 2학기 프로젝트를 시작하게 되었습니다.  
+
+## 2학기에는 무엇을 할꼬?
+우리는 오픈나무 프로젝트에서 영감을 받아 파이썬 기반의 위키위키 웹 서비스를 개발해보기로 했습니다.  
+오픈나무는 파이썬 기반으로 작성된 위키 엔진 프로젝트입니다. 사용자가 나무위키와 비슷한 위키위키를 만들수 있도록 설계되어 쉽게 위키위키를 시작할 수 있습니다.  
+이미 1학기에 파이썬의 기본적인 형태는 익혔기에 어렵지 않게 진행할 것이라 생각했습니다.  
+
+## Flask: 파이썬 웹 애플리케이션 모듈
+박종현 학생이 풍부한 경험을 갖고 있는 Flask 모듈을 웹 애플리케이션을 개발하는데 사용하기로 했습니다.
+
+```python
+import flask
+
+app = flask.Flask(__name__)
+
+@app.route('/')
+def main():
+    return 'hello'
+
+app.run(port=2500)
+```
+
+기본적인 애플리케이션 코드는 이와 같으며, `python app.py`와 같은 수단으로 파이썬 애플리케이션을 실행하고 `http://localhost:2500/`에 접속하면 빈 화면에 `hello`라는 단어가 나타난 것을 볼 수 있습니다.
+
+## 사이트 주소를 통해 데이터 받기
+```python
+
+app = flask.Flask(__name__)
+
+@app.route('/<name>')
+def route_name(name = ''):
+    return '당신의 이름은 {}이군요!'.format(name)
+
+app.run(port=2500)
+```
+
+위 코드를 실행시키고 `http://localhost:2500/박영준`에 접속하면 빈 화면에 `당신의 이름은 박영준이군요!`라는 문장이 나타난 것을 볼 수 있습니다.

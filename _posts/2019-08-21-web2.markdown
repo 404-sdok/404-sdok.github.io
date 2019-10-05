@@ -1,0 +1,11 @@
+---
+layout: post
+title: "WEB2: 19년 8월 21일 동아리 활동 보고서"
+date: 2019-08-21 00:00:00 +0300
+description: 19년 8월 21일 동아리 활동 보고서 # Add post description (optional)
+img: # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [report, web]
+---
+
+8월 21일, 404 컴퓨터 못 찾음은 17시부터 18시까지 1시간동안 2학기 위키위키 개발 프로젝트를 진행하게 되었습니다.
