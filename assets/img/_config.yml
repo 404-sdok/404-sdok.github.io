@@ -1,0 +1,36 @@
+title: 숭덕고등학교 IT 동아리, 404 컴퓨터 못 찾음.
+description: > # this means to ignore newlines until "baseurl:"
+  # desc start
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Park, Jonghyeon. # add your name
+author-img: park-jonghyeon.jpg # add your photo
+about-author: > 
+  박종현(Park, Jonghyeon)은 숭덕고등학교 IT동아리, 404 컴퓨터 못찾음의 동아리 부장입니다. 다양한 코딩 지식으로 친구들과 함께 동아리 활동을 이끌어나가고 있습니다. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: 404-sdok # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
+
+# Disqus
+discus-identifier:  # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
